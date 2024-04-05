@@ -37,18 +37,21 @@ html {
    height: 100%;
 }
 
-
 body {
-   max-width: 1020px;
+   width: 1020px;
+   min-height: 100%;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
-   min-height: 100%;
    font-family: "PT Sans", sans-serif;
    font-weight: 700;
    color: #000000;
    font-style: normal;
    background-color: #000000;
+}
+
+.main-container {
+   flex-grow: 1;
 }
 
 /* хедер */
@@ -304,8 +307,9 @@ body {
 /* основное меню */
 .barbershop-advantages {
    font-weight: 700;
+   display: block;
    background-image: url("../images/interer.jpg");
-   background-size: 100% 100% cover;
+   background-size: 100% auto;
    background-repeat: no-repeat;
    color: #ffffff;
    padding: 64px 0 61px;
@@ -1139,9 +1143,11 @@ body {
    background-color: rgba(36, 36, 36, 0.8);
    display: none;
 }
-.open-modal{
+
+.open-modal {
    display: block;
 }
+
 .container-wrapper {
    position: relative;
    margin: auto;

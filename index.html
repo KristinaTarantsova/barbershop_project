@@ -16,7 +16,7 @@
         <nav class="barbershop-nav">
           <ul class="barbershop-navigation-list">
             <li class="barbershop-navigation-item"><a class="barbershop-navigation-link" href="#">О нас</a></li>
-            <li class="barbershop-item"><a class="barbershop-navigation-link" href="#">Каталог</a></li>
+            <li class="barbershop-item"><a class="barbershop-navigation-link" href="catalog.html">Каталог</a></li>
             <li class="barbershop-item"><a class="barbershop-navigation-link" href="#">Частые вопросы</a></li>
           </ul>
           <ul class="barbershop-navigation-list">
@@ -118,7 +118,7 @@
       </div>
     </header>
     <!-- основное меню -->
-    <main class="barbershop-advantages">
+    <main class="barbershop-advantages main-container">
       <div class="container">
         <h1 class="visually-hidden">Барбершоп Бородинский</h1>
         <img class="advantages-img" src="./images/logo-full-white.svg" width="367" height="152"
@@ -238,7 +238,7 @@
                 <div class="recording-input-wrapper">
                   <div class="tooltip-wrapper">
                     <label class="label-text label-data" for="recording-data">Дата<input class="input input-data"
-                        id="recording-data" type="text" name="data" value="01.01.2020" placeholder="01.01.2020"></label>
+                        id="recording-data" type="text" name="data" value="01.01.2020" placeholder="01.01.2020" required></label>
                     <!-- тултип дата -->
                     <span class="tooltip tooltip-data">
                       <button class="tooltip-toggle toggle-data" aria-labelledby="tooltip-label-data" type="button">
@@ -258,7 +258,7 @@
                   </div>
                   <div class="tooltip-wrapper">
                     <label class="label-text label-time" for="recording-time">Время<input class="input input-time"
-                        id="recording-time" type="text" name="time" value="10:10" placeholder="10:10"></label>
+                        id="recording-time" type="text" name="time" value="10:10" placeholder="10:10" required></label>
                     <!-- тултип время -->
                     <span class="tooltip tooltip-time">
                       <button class="tooltip-toggle toggle-time" aria-labelledby="tooltip-label-time" type="button">
@@ -278,14 +278,14 @@
                   </div>
                   <label class="label-text" for="recording-phone">Телефон<input class="input input-phone"
                       id="recording-phone" type="text" name="phone" value="+7 800 000-00-00"
-                      placeholder="+7 800 000-00-00"></label>
+                      placeholder="+7 800 000-00-00" required></label>
                 </div>
                 <!-- введите ваше имя -->
                 <div class="recording-wrapper-name">
                   <label class="label-text" for="recording-name">Ваше имя</label><input class="input recording-name"
-                    id="recording-name" type="text" name="name" value="" placeholder="Введите ваше имя">
+                    id="recording-name" type="text" name="name" value="" placeholder="Введите ваше имя" required>
                 </div>
-                <button class="button recording-button" type="button">Записаться</button>
+                <button class="button recording-button" type="submit">Записаться</button>
               </fieldset>
             </form>
           </section>
@@ -314,7 +314,7 @@
                 <div class="email-wrapper">
                   <label class="label-email visually-hidden" for="email">Введите ваш email</label>
                   <input class="input input-email" id="email" name="email" type="text"
-                    placeholder="email@htmlacademy.ru">
+                    placeholder="email@htmlacademy.ru" required>
                   <button class="button button-email" type="submit"></button>
                 </div>
               </fieldset>
